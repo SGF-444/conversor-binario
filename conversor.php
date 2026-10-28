@@ -1,8 +1,9 @@
 <?php 
 
-//1-Decimal a Binario
 
-$numero=12;
+//conversor decimal-binario
+
+$numero=255;
 
 $binario="";
 
@@ -14,4 +15,13 @@ $numero= intdiv($numero, 2);
 
 }
 
+
+//rellenar 8 bits
+for ($i=strlen($binario); $i < 8; $i++) {
+    $binario= "0" . $binario;
+}
+
 echo $binario . "\n";
+
+
+
