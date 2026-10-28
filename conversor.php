@@ -21,7 +21,20 @@ for ($i=strlen($binario); $i < 8; $i++) {
     $binario= "0" . $binario;
 }
 
+//Binario a decimal
+
+$binario="";
+
+$decimal=0;
+
+$longitud = strlen($binario);
+
+for ($i=0; $i < $longitud; $i++) {
+  if ($binario[$i] = 1 ) {
+    $decimal += 2 ** $i[1];
+
+  }
+
+}
+
 echo $binario . "\n";
-
-
-
